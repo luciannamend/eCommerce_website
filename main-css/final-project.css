@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+/* apply to all */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+* {
+    margin: auto;
+    font-family: 'poppins', sans-serif;
+    color: rgb(47, 46, 46);
+    text-decoration: none;
+}
+
+body {
+    background-color: rgb(245, 247, 251);
+}
+
+/* header */
+.logo {
+    color: bisque;
+    font-size: 1.85rem;
+    font-weight: bold;
+    margin: 10rem;
+    margin-right: 11rem;
+}
+
+.logo span {
+    color: #DEEFE7;
+}
+
+button{
+    border-radius: 2rem;
+    vertical-align: middle;
+    padding: 0;
+    border: none;
+    box-shadow: 0px 0px 2px 2px wheat;
+}
+
+button:hover{
+    border-radius: 2rem;
+    vertical-align: middle;
+    padding: 0;
+    border: none;
+    box-shadow: 0px 0px 2px 2px rgb(67, 67, 67);
+    transition: 500ms;
+}
+
+button .shopping-cart-button {
+    width: 3rem;
+    cursor: pointer;
+    border-radius: 1rem;
+    vertical-align: top;
+}
+
+button .shopping-cart-button:hover {
+    width: 3.45rem;
+    cursor: pointer;
+    transition: 500ms;
+}
+
+.navbar { 
+    position: fixed;
+    color: #DEEFE7;
+    background-color: black;
+    overflow: hidden;   
+    top: 0;
+    left: 0;
+    right: 2rem;
+    width: 100%;
+}
+
+.navitem {    
+    font-weight: bold;
+    display: inline-block;
+    font-size: 1.15rem;
+    padding: 1rem;
+    color: rgb(214, 214, 215);
+}
+
+.navitem:hover {   
+    color: wheat;
+    transition: 500ms;
+}
+
+.navitem.active {
+    background-color: #DEEFE7;
+    color: #002333;
+    transition: 500ms;
+}
+
+.banner {
+    width: 100%;
+    height: auto;
+    top: 4.35%;
+}
+
+/* top */
+.free-shipping-banner img{
+    width: 100%;    
+}
+
+.title{
+    font-size: 2rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Main */
+.container h1{
+    font-size: 2rem;
+    padding: 1rem;
+    padding-top: 3rem;
+}
+
+.grid{
+    display: flex;
+    gap: 2.5rem;
+    margin: 2rem 5rem 2rem 5rem;
+}
+
+.style-galery{
+    display: flex;
+}
+
+.style-galery img{
+    width: 15rem;
+    padding: 1rem;
+    padding-bottom: 0;
+}
+
+.style-galery img:hover{
+    transform: scale(1.25);
+    transition: 500ms;
+}
+
+.style-galery p{
+    text-align: center;
+}
+
+.special-offer{
+    display: flex;
+}
+
+.special-offer img{
+    width: 15rem;
+    padding: 1rem;
+    padding-bottom: 0;
+}
+
+.special-offer img:hover{
+    transform: scale(1.25);
+    transition: 500ms;
+}
+
+.special-offer p{
+    text-align: center;
+}
+
+.click-photo{
+    color: rgb(68, 67, 67);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 3rem;
+}
+
+.click-photo:hover{
+    font-size: 1.1rem;
+    color: black;
+    transition: 500ms;
+}
+
+/* Derived Pages */
+.shop-page h2{
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.shop-page h5{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.image-shop-page{
+    width: 40rem;
+    display: center;
+}
+
+.shop-page-more {
+    width: 30rem;
+    padding: 0.5rem;
+    display: -webkit-inline-box;
+}
+
+.more-images h2{
+    padding: 2rem;
+}
+
+.form-input{
+    padding: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.select-amount > button{
+    display: inline;
+    color: #DEEFE7;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2rem;
+    background-color: black;
+    padding: 1rem 1.6rem 1rem 1.6rem;
+    margin-top: 2rem;
+    border-radius: 0.2rem;
+    cursor: pointer;
+}
+
+
+/* Footer */
+.copyright{
+    margin-top: 3rem;
+    padding: 0.75rem;
+    text-align: center;
+    background-color: rgb(238, 241, 246);
+}
+
+/* Responsiveness */
+@media screen and (max-width: 1200px) {
+    /* body{
+        background-color: blue;
+    } */
+
+    .navitem{
+        padding: 0.8rem;
+        font-size: 1rem;
+    }
+    .logo {
+        margin: 6rem;
+    }
+    .banner {
+        top: 4.15%;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+    /* body{
+        background-color: red;
+    } */
+
+    .navitem{
+        font-size: 1rem;
+        padding: 0.3rem;
+    }
+    .logo {
+        font-size: 1.45rem;
+        margin: 4rem;
+    }
+    .banner {
+        top: 4%;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    /* body{
+        background-color: palevioletred;
+    } */
+
+    .navitem{
+        font-size: 0.85rem;
+        padding: 0.35rem;
+    }
+    .logo {
+        font-size: 1.35rem;
+        margin: 1rem;
+    }
+    .banner {
+        top: 3.65%;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    /* body{
+        background-color: yellow;
+    } */
+
+    .navitem{
+        font-size: 0.55rem;
+        padding: 0.1rem;
+    }
+    button .shopping-cart-button{
+        width: 2rem;
+    }
+
+    .logo {
+        font-size: 1rem;
+        margin: 1rem;
+    }
+    .banner {
+        top: 2.45%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    /* body{
+        background-color: black;
+    } */
+    .navitem{
+        font-size: 0.3rem;
+        padding: 0.1rem;
+    }    
+}
